@@ -1,6 +1,5 @@
 # React Bootstrap - Course Assignment
 
-
 This project was created with:
 
 * React
