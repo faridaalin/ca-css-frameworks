@@ -1,0 +1,146 @@
+// Overwrite theme variables - bootstrap
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    6: ($spacer * 4),
+    7: ($spacer * 5),
+    8: ($spacer * 6)
+  ),
+  $spacers
+);
+
+$theme-colors: 
+  (
+    "primary":    #E92569,
+    "dark":       #E92569
+  );
+
+$primary: #E92569;
+$input-bg:  #FFFFFF;
+
+
+
+@import "../node_modules//bootstrap/scss/bootstrap.scss";
+
+// custom 
+
+.navbar-light .navbar-brand {
+    font-family: "Playfair Display", serif;
+    color: $primary;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #0A0A0A;
+    padding: 8px 24px;
+
+
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        border-radius: 3px;
+    }
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    background-color: #FFFFFF;
+}
+
+.form-control {
+    border: none;    
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1.6px;
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
+
+.accordion > .card {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); 
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border: transparent;
+}
+
+.accordion > .card > .card-header {
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+
+.collapse .card-body{
+    padding: 2em;
+    background: radial-gradient(#FFFFFF, #E5E5E5);
+    border-top: 2px solid $primary;
+}
+
+
+.tab-content {
+    min-height: 200px;
+    padding: 32px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #dee2e6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tab-content > .active {
+    background-color: #FFFFFF;
+}
+
+.accordion {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #0A0A0A;
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
+}
+
+
+textarea.form-control {
+    min-height: 224px;
+}
+
+  .form-check  ~ .form-check-input:checked {
+    background-color: $primary;
+  }
+
+  .input-group-text {
+      color: #FFFFFF;
+      background: #C7C7C7;
+  }
+
+  .carousel-control-next-icon {
+    background-image: none;
+  }
