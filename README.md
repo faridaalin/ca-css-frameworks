@@ -9,7 +9,7 @@ This project was created with:
 * React-icons
 * Deployed with Netlify
 
- [link to website here](www.website.com).
+ [link to website here](https://css-framework-ca.netlify.app/).
 
 ## Available Scripts
 
