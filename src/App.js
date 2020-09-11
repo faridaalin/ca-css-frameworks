@@ -19,14 +19,12 @@ function App() {
     <>
       <StickyFooter>
         <Navigation />
-     
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/news" component={News} />
             <Route exact path="/contact" component={Contact} />
             <Route component={PageNotFound} />
           </Switch>
-
       </StickyFooter>
       <Footer />
     </>

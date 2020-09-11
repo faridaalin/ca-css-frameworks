@@ -5,12 +5,16 @@ import Form from "react-bootstrap/Form";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import FormControl from "react-bootstrap/FormControl";
+import Layout from '../layout/Layout';
 
-import {ButtonStyled, FormStyled} from './nav.styles'
+import {ButtonStyled, FormStyled, NavWrapper} from './nav.styles';
+
+
 
 function Navigation() {
   return (
-    <Navbar bg="light" expand="md" className="px-4 py-3">
+    <NavWrapper>
+    <Navbar bg="light" expand="md" className="navigation px-4 py-3">
       <Navbar.Brand href="/">The YAY Company</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -28,6 +32,7 @@ function Navigation() {
           </FormStyled> 
       </Navbar.Collapse>
     </Navbar>
+    </NavWrapper>
   );
 }
 

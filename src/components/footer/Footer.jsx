@@ -18,7 +18,7 @@ export default function Footer() {
           <Layout>
           <Row className="py-md-2">
             <Col xs={12}  md={4} className="d-flex justify-content-center align-items-center mt-2 mb-3 mt-md-0 mb-md-0">
-              <ColStyles xs={5} width={140} >
+              <ColStyles xs={5} width={140} className="mr-md-auto">
                 <FaVimeoV />
                 <FaYoutube />
               </ColStyles>
