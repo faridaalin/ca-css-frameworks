@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import FormControl from "react-bootstrap/FormControl";
-import Layout from '../layout/Layout';
 
 import {ButtonStyled, FormStyled, NavWrapper} from './nav.styles';
 

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Navbar from "react-bootstrap/Navbar";
 
 export const ButtonStyled = styled(Button)`
   border-top-left-radius: 0;
